@@ -1,0 +1,58 @@
+body{
+  background: peachpuff;
+
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.columns {
+  background: white;
+  float: left;
+  padding: 20px;
+
+}
+
+.columns + .columns {
+  margin-top: 5%;
+}
+
+@media screen and (min-width: 1160px) {
+  .columns {
+      float: left;
+      width: 30%;
+  }
+
+  .columns + .columns {
+    margin-left: 5%;
+    margin-top: 0;
+  }
+}
+
+.section-1,
+.section-2 {
+  background: black;
+  margin: 0, auto;
+  max-width: 1200px;
+  padding: 50px;
+  width: 80%;
+}
+
+.section-2{
+  background: pink;
+}
